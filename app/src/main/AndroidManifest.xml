@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.siamsr.billmeter8">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_billmeter"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_billmeter"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Page_Menu" />
+        <activity android:name=".Page_ReadMeter" />
+        <activity android:name=".Page_ImportData" />
+        <activity android:name=".Page_UploadOnline" />
+        <activity android:name=".Page_ShowRoute" />
+        <activity android:name=".Page_BackupDB" />
+        <activity android:name=".Page_LoadRoute" />
+        <activity android:name=".Page_Route" />
+        <activity android:name=".Page_ReadMeterPlus" />
+        <activity android:name=".Page_FindMeter" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

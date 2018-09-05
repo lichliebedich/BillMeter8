@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'meter8st'
+            keyPassword 'LektarE12'
+            storeFile file('/Users/MacPro/AndroidStudioProjects/BillMeter8/meter8keyst.jks')
+            storePassword 'LektarE12'
+        }
+    }
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.siamsr.billmeter8"
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 2
+        versionName "1.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation files('libs/ftp4j-1.7.2.jar')
+    implementation files('libs/commons-net-3.3.jar')
+    api files('libs/DO_AndroidSDK_v2.4.9.aar')
+    implementation files('libs/tscsdk.jar')
+}

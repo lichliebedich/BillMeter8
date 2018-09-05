@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">BillMeter8</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_exit">ออก</string>
+
+    <string-array name="wwcode">
+        <item>-- เลือกสาขา --</item>
+        <item>อุบลราชธานี</item>
+        <item>พิบูลมังสาหาร</item>
+        <item>เดชอุดม</item>
+        <item>เขมราฐ</item>
+        <item>อำนาจเจริญ</item>
+        <item>ยโสธร</item>
+        <item>เลิงนกทา</item>
+        <item>มหาชนะชัย</item>
+        <item>บุรีรัมย์</item>
+        <item>สตึก</item>
+        <item>ลำปลายมาศ</item>
+        <item>นางรอง</item>
+        <item>ละหานทราย</item>
+        <item>สุรินทร์</item>
+        <item>ศีขรภูมิ</item>
+        <item>รัตนบุรี</item>
+        <item>สังขะ</item>
+        <item>ศรีสะเกษ</item>
+        <item>กันทรลักษ์</item>
+        <item>มุกดาหาร</item>
+        <item>ขาณุวรลักษบุรี</item>
+        <item>กำแพงเพชร</item>
+        <item>ตาก</item>
+        <item>แม่สอด</item>
+        <item>สอบสุราษฎร์ธานี</item>
+    </string-array>
+</resources>
